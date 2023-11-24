@@ -1,0 +1,14 @@
+.grid-container {
+  display: flex;
+  flex-direction: column;
+}
+.grid-container .grid-row {
+  display: flex;
+  flex-direction: row;
+}
+.grid-container .grid-item {
+  background-color: #f0f0f0; /* Light gray color, change as needed */
+  width: 5px;
+  height: 5px;
+  border: 1px solid #ddd; /* Optional border */
+}/*# sourceMappingURL=styles.css.map */
