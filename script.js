@@ -13,9 +13,9 @@ function myGrid() {
         gridContainer.appendChild(gridRow);
 
         for (let x = 0; x < 16; x++) {
-            const gridItemdiv = document.createElement('div');
-            gridItemdiv.className = 'grid-item';
-            gridRow.appendChild(gridItemdiv);
+            const gridItem = document.createElement('div');
+            gridItem.className = 'grid-item';
+            gridRow.appendChild(gridItem);
         }
 
     } 
