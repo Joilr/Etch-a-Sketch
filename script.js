@@ -1,3 +1,6 @@
+// Global variable to hold the current selected color
+let currentColor = '#ff0000';
+
 // Function to create a 16x16 grid
 function createGrid() {
     const gridContainer = document.querySelector('.grid-container');
@@ -16,16 +19,24 @@ function createGrid() {
 
 // Function to change the color of a grid item
 function changeColor(target) {
-    target.style.backgroundColor = '#ff0000'; // Change to your desired color
+    target.style.backgroundColor = currentColor;  // Change to your desired color
+}
+
+// Function to update the current color
+function updateColor(newColor) {
+    currentColor = newColor;
 }
 
 // Event listener for DOMContentLoaded
 document.addEventListener("DOMContentLoaded", () => {
+
+    // Initialize the grid
     createGrid();
 
     const gridContainer = document.querySelector('.grid-container');
     let isMouseDown = false;
 
+    // Event listener for mousedown on grid items
     gridContainer.addEventListener('mousedown', (event) => {
         if (event.target.classList.contains('grid-item')) {
             isMouseDown = true;
@@ -33,13 +44,21 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    // Event listener for mouseover on grid items
     gridContainer.addEventListener('mouseover', (event) => {
         if (isMouseDown && event.target.classList.contains('grid-item')) {
             changeColor(event.target);
         }
     });
 
+    // Event listener for mouseup on the document
     document.addEventListener('mouseup', () => {
         isMouseDown = false;
     });
+
+    // Event listeners for color buttons
+    document.querySelector('#redColor').addEventListener('click', () => updateColor('#ff0000'));
+    document.querySelector('#blueColor').addEventListener('click', () => updateColor('#0000ff'));
+    document.querySelector('#yellowColor').addEventListener('click', () => updateColor('#ffff00'));
+    
 });
