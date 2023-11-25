@@ -1,3 +1,11 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .grid-container {
   display: flex;
   flex-direction: column;
@@ -7,8 +15,8 @@
   flex-direction: row;
 }
 .grid-container .grid-item {
-  background-color: #f0f0f0; /* Light gray color, change as needed */
-  width: 5px;
-  height: 5px;
-  border: 1px solid #ddd; /* Optional border */
+  background-color: #f0f0f0;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #ddd;
 }/*# sourceMappingURL=styles.css.map */
