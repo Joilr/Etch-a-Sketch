@@ -9,10 +9,12 @@
 </head>
 <body>
 
-    <button id="redColor">Red</button>
-    <button id="blueColor">Blue</button>
-    <button id="yellowColor">Yellow</button>
+    <input type="color" id="colorPicker" value="#16DFB7">
     <button id="resetButton">Reset</button>
+    <button id="wipeButton">Wipe</button>
+
+    <input type="range" id="mySlider" min="1" max="100" value="50" oninput="updateSliderValue(this.value)">
+    <span id="sliderValue">50</span>
 
     <div class="grid-container"></div>
 

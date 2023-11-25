@@ -1,3 +1,7 @@
+:root {
+  --hover-color: #16DFB7; /* Initial hover color */
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -9,14 +13,21 @@ html, body {
 .grid-container {
   display: flex;
   flex-direction: column;
+  height: 500px;
+  width: 500px;
 }
 .grid-container .grid-row {
   display: flex;
   flex-direction: row;
+  flex: 1;
+  height: 100%;
 }
-.grid-container .grid-item {
+.grid-container .grid-row .grid-item {
   background-color: #f0f0f0;
-  width: 25px;
-  height: 25px;
   border: 1px solid #ddd;
+  flex: 1;
+  height: 100%;
+}
+.grid-container .grid-row .grid-item:hover {
+  background-color: var(--hover-color);
 }/*# sourceMappingURL=styles.css.map */
