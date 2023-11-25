@@ -8,6 +8,7 @@ html, body {
     display: flex;
     justify-content: center; 
     align-items: center;     
+    flex-direction: column;
 }
 
 .grid-container {
@@ -15,6 +16,9 @@ html, body {
     flex-direction: column;
     height: 500px;  
     width: 500px;
+    margin-top: 1rem;
+    padding: 1px;
+    border: 2px solid black;
 
     .grid-row {
         display: flex;
@@ -26,7 +30,6 @@ html, body {
             background-color: #f0f0f0;
             border: 1px solid #ddd;
             flex: 1;
-            height: 100%;
 
             &:hover {
                 background-color: var(--hover-color);
@@ -35,4 +38,25 @@ html, body {
     }
 }
 
+.the-buttons {
+    
+    > * {
+        margin-right: 1rem; 
+    }
+
+    > :last-child {
+        margin-right: 0;
+    }
+
+    .slider-text{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 2.5rem;
+    }
+
+    #mySlider{
+        
+    }
+
+}
 

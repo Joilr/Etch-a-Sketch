@@ -8,6 +8,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .grid-container {
@@ -15,6 +16,9 @@ html, body {
   flex-direction: column;
   height: 500px;
   width: 500px;
+  margin-top: 1rem;
+  padding: 1px;
+  border: 2px solid black;
 }
 .grid-container .grid-row {
   display: flex;
@@ -26,8 +30,45 @@ html, body {
   background-color: #f0f0f0;
   border: 1px solid #ddd;
   flex: 1;
-  height: 100%;
 }
 .grid-container .grid-row .grid-item:hover {
   background-color: var(--hover-color);
+}
+
+.the-buttons > * {
+  margin-right: 1rem;
+}
+.the-buttons > :last-child {
+  margin-right: 0;
+}
+.the-buttons .slider-text {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2.5rem;
+}
+.the-buttons #mySlider ::-webkit-slider-runnable-track {
+  background: #ddd;
+  height: 4px;
+  border-radius: 2px;
+}
+.the-buttons #mySlider ::-moz-range-track {
+  background: #ddd;
+  height: 4px;
+  border-radius: 2px;
+}
+.the-buttons #mySlider ::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #333;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.the-buttons #mySlider ::-moz-range-thumb {
+  background: #333;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */

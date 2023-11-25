@@ -9,12 +9,17 @@
 </head>
 <body>
 
-    <input type="color" id="colorPicker" value="#16DFB7">
-    <button id="resetButton">Reset</button>
-    <button id="wipeButton">Wipe</button>
+    <div class="the-buttons">
 
-    <input type="range" id="mySlider" min="1" max="100" value="50" oninput="updateSliderValue(this.value)">
-    <span id="sliderValue">50</span>
+        <div class="slider-text">
+            <span id="sliderValue">50 x 50</span>
+         </div>
+        <input type="color" id="colorPicker" value="#16DFB7">
+        <button id="resetButton">Reset</button>
+        <button id="wipeButton">Wipe</button>
+        <input type="range" id="mySlider" min="1" max="100" value="50" oninput="updateSliderValue(this.value)">
+        
+    </div>  
 
     <div class="grid-container"></div>
 

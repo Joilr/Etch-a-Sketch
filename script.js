@@ -21,7 +21,7 @@ function createGrid() {
 
 //Function to change the amount of pixel in grid
 function updateSliderValue(value) {
-    document.getElementById('sliderValue').textContent = value;
+    document.getElementById('sliderValue').textContent = `${value} x ${value}`;
     currentPixels = value;
 
     // delete current grid
