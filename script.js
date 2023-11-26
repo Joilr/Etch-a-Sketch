@@ -48,6 +48,7 @@ function updateColor(newColor) {
 // Function to wipe
 function wipeGrid() {
     currentColor = '#f0f0f0';
+    document.documentElement.style.setProperty('--hover-color', currentColor);
 }
 
 // Function to reset all grid items to the standard color

@@ -45,7 +45,7 @@ html, body {
   flex: 1;
 }
 .grid-container .grid-row .grid-item:hover {
-  background-color: var(--hover-color);
+  background-color: var(--hover-color) !important;
 }
 
 .on-top {

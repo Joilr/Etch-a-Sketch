@@ -1,5 +1,5 @@
 :root {
-    --hover-color: #000000;; /* Initial hover color */
+    --hover-color: #000000; /* Initial hover color */
 }
 
 html, body {
@@ -46,7 +46,7 @@ html, body {
             flex: 1;
 
             &:hover {
-                background-color: var(--hover-color);
+                background-color: var(--hover-color) !important;
             }
         }
     }
@@ -81,6 +81,7 @@ html, body {
     button:hover {
         box-shadow: 0 4px 25px #d84848; /* Add a shadow on hover */
     }
+    
 }
 
 #mySlider {
