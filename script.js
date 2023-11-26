@@ -1,5 +1,5 @@
 // Global variable to hold the current selected color
-let currentColor = '#16DFB7';
+let currentColor = '#000000';
 // Global variable to hold the current amount of pixels
 let currentPixels = 16;
 

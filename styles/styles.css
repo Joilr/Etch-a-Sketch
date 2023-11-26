@@ -1,5 +1,5 @@
 :root {
-  --hover-color: #16DFB7; /* Initial hover color */
+  --hover-color: #000000; /* Initial hover color */
 }
 
 html, body {
@@ -9,6 +9,17 @@ html, body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #aaa9a9;
+}
+
+.title {
+  font-family: "Pacifico", cursive;
+  font-size: 48px; /* Increase font size for a playful look */
+  font-weight: normal;
+  color: #d84848; /* Choose a bright, cartoony color */
+  text-transform: uppercase; /* Uppercase the text for emphasis */
+  letter-spacing: 4px; /* Increase letter spacing for a whimsical feel */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
 }
 
 .grid-container {
@@ -17,8 +28,10 @@ html, body {
   height: 500px;
   width: 500px;
   margin-top: 1rem;
+  margin-bottom: 1rem;
   padding: 1px;
   border: 2px solid black;
+  border-radius: 3px;
 }
 .grid-container .grid-row {
   display: flex;
@@ -35,40 +48,55 @@ html, body {
   background-color: var(--hover-color);
 }
 
-.the-buttons > * {
-  margin-right: 1rem;
-}
-.the-buttons > :last-child {
-  margin-right: 0;
-}
-.the-buttons .slider-text {
+.on-top {
   display: flex;
-  justify-content: flex-end;
-  margin-right: 2.5rem;
+  flex-direction: column;
+  align-items: center;
 }
-.the-buttons #mySlider ::-webkit-slider-runnable-track {
-  background: #ddd;
-  height: 4px;
-  border-radius: 2px;
+
+.the-buttons {
+  display: flex;
 }
-.the-buttons #mySlider ::-moz-range-track {
-  background: #ddd;
-  height: 4px;
-  border-radius: 2px;
+.the-buttons > *:not(:last-child) {
+  margin-right: 10px;
 }
-.the-buttons #mySlider ::-webkit-slider-thumb {
+.the-buttons #colorPicker {
+  border-radius: 8px;
+  height: 45px;
+  width: 70px;
+}
+.the-buttons button {
+  border-radius: 8px;
+  width: 80px;
+}
+.the-buttons #colorPicker:hover,
+.the-buttons button:hover {
+  box-shadow: 0 4px 25px #d84848; /* Add a shadow on hover */
+}
+
+#mySlider {
+  width: 100%;
   -webkit-appearance: none;
-  appearance: none;
-  background: #333;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  cursor: pointer;
+     -moz-appearance: none;
+          appearance: none;
+  height: 1vmin;
+  border-radius: 0.5vmin;
 }
-.the-buttons #mySlider ::-moz-range-thumb {
-  background: #333;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
+
+#mySlider::-webkit-slider-thumb {
   cursor: pointer;
+  -webkit-appearance: none;
+          appearance: none;
+  width: 2vmin;
+  height: 2vmin;
+  background: #d84848;
+  border-radius: 50%;
+}
+
+.slider-text {
+  margin-bottom: 0.5rem;
+  font-weight: bolder;
+  font-size: 24px;
+  font-style: oblique;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }/*# sourceMappingURL=styles.css.map */

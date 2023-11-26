@@ -6,24 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Page Title</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+
+
 </head>
 <body>
 
-    <div class="the-buttons">
+    <h1 class="title">Etch-a-Sketch</h1>
 
+    <div class="on-top">
         <div class="slider-text">
             <span id="sliderValue">50 x 50</span>
          </div>
-        <input type="color" id="colorPicker" value="#16DFB7">
-        <button id="resetButton">Reset</button>
-        <button id="wipeButton">Wipe</button>
         <input type="range" id="mySlider" min="1" max="100" value="50" oninput="updateSliderValue(this.value)">
-        
     </div>  
 
-    <div class="grid-container"></div>
+        <div class="grid-container"></div>
 
-
+        <div class="the-buttons">
+            <input type="color" id="colorPicker" value="#000000;">
+            <button id="resetButton"><i class="fas fa-undo"></i></button>
+            <button id="wipeButton"><i class="fas fa-eraser"></i></button>
+        </div>
+    
+  
     <script src="script.js"></script>
 </body>
 </html>
